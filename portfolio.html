@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+      body {
+        font-family: "Work Sans", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div
+      class="topnav flex bg-gray-200 py-2 gap-4 text-sm md:text-lg justify-center"
+      id="myTopnav"
+    >
+      <a
+        class="hover:bg-slate-600 hover:no-underline p-2 hover:text-white hover:rounded-xl"
+        href="./"
+        class="active"
+        >Home</a
+      >
+      <a
+        class="hover:bg-slate-600 hover:no-underline p-2 hover:text-white hover:rounded-xl"
+        href="./exp.html"
+        >Experience</a
+      >
+      <a
+        class="hover:bg-slate-600 hover:no-underline p-2 hover:text-white hover:rounded-xl"
+        href="./about.html"
+        >About</a
+      >
+      <a
+        class="hover:bg-slate-600 hover:no-underline p-2 hover:text-white hover:rounded-xl"
+        href="./contact.html"
+        >Contact</a
+      >
+      <a
+        class="hover:bg-slate-600 hover:no-underline p-2 hover:text-white hover:rounded-xl"
+        href="./Images/Resume2022.pdf"
+        target=" "
+        >Resume</a
+      >
+    </div>
+
+    <div class="flex justify-center h-64 my-4">
+      <img
+        style="border-radius: 50%; border: 2px solid gray"
+        src="./Images/dasktop-removebg-preview.png"
+        alt="img"
+        data-aos="zoom-out"
+        data-aos-duration="1000"
+        data-aos-once="true"
+      />
+    </div>
+    <div
+      class="info flex justify-center text-4xl"
+      data-aos="flip-up"
+      data-aos-duration="1000"
+      data-aos-once="true"
+    >
+      <h2>Hii! I Am Harsh Saxena</h2>
+    </div>
+    <div
+      class="info flex justify-center my-2"
+      data-aos="flip-down"
+      data-aos-duration="1000"
+      data-aos-once="true"
+    >
+      <h4>Check my work below 👇</h4>
+    </div>
+    <div class="flex justify-center flex-col items-center mt-16">
+      <h1 class="text-xl">Coming soon....</h1>
+      <h1 class="text-4xl text-cyan-900">Fuelcab App</h1>
+    </div>
+
+    <!-- this is the top image slider -->
+    <div class="image_slider flex flex-col items-center justify-center mt-4">
+      <div
+        id="carouselExampleDark"
+        class="carousel carousel-dark slide md:w-2/3 flex justify-center"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="./Images/top1.png" class="d-block w-100" alt="..." />
+            <div
+              class="carousel-caption d-none d-md-block text-gray-700 text-lg"
+            >
+              <h5>Top page</h5>
+              <p>Navbar with Hashlink and smooth transmission</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./Images/top2.png" class="d-block w-100" alt="..." />
+            <div
+              class="carousel-caption d-none d-md-block text-gray-700 text-lg"
+            >
+              <h5>Popup Login/Signup Page</h5>
+              <p>Login/Signup page with manual login and google auth.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./Images/top4.png" class="d-block w-100" alt="..." />
+            <div
+              class="carousel-caption d-none d-md-block text-gray-700 text-lg"
+            >
+              <h5>Footer with HashLinks</h5>
+              <p>Social Media links, popup franchise and join us pages</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- close the top slider -->
+
+    <div class="flex justify-center flex-col items-center mt-16 text-center">
+      <h1 class="text-xl">My Projects</h1>
+      <h1 class="text-3xl text-cyan-900 mt-2">
+        Read the compleat section for understand the whole project and to use,
+        click on "Link"
+      </h1>
+    </div>
+
+    <!-- this is the content of my site -->
+    <div
+      class="First_project mx-20 md:flex md:items-center m-10"
+      data-aos-duration="700"
+      data-aos="slide-left"
+      data-aos-once="true"
+    >
+      <img
+        src="./Images/Project1.png"
+        alt="img"
+        class="images project_img md:w-1/2 w-full shadow-2xl ..."
+        data-aos-delay="750"
+        data-aos-duration="800"
+        data-aos="fade-right"
+        data-aos-once="true"
+      />
+      <div class="m-5">
+        <h2 class="text-xl font-bold">The Service Site</h2>
+        <p class="my-3">
+          This is the service site, you can use this site to give the customer
+          service and with the animated AOS effect.
+        </p>
+        <button
+          type="button"
+          class="btn btn-secondary bg-slate-200 text-black hover:text-black"
+        >
+          <a href="https://harshsaxenajii.github.io/RepairSite/" target=" "
+            >Link</a
+          >
+        </button>
+      </div>
+    </div>
+    <!-- close the first containt of my site -->
+    <!-- this is the second content of my site -->
+    <div
+      class="First_project mx-20 items-center md:flex md:flex-row-reverse md:justify-between my-10"
+      data-aos-duration="700"
+      data-aos="slide-right"
+      data-aos-once="true"
+    >
+      <img
+        src="./Images/project-2a.png"
+        alt="img"
+        class="images project_img md:w-1/2 w-full shadow-2xl ..."
+        data-aos-delay="750"
+        data-aos-duration="800"
+        data-aos="fade-left"
+        data-aos-once="true"
+      />
+      <div class="text1 mx-5 mt-4">
+        <h2 class="text-xl font-bold">The Text Editor</h2>
+        <p class="text-left my-3">
+          Functions-
+          <br />
+          1- Convert to uppercase <br />
+          2- Convert to lowercase <br />
+          3- Basic of dark theme <br />
+          4- Number of words <br />
+          5- Your text preview <br />
+        </p>
+        <button
+          type="button"
+          class="btn btn-secondary bg-slate-200 text-black hover:text-black"
+        >
+          <a href="https://harshsaxenajii.github.io/Text_editor/" target=" "
+            >Link</a
+          >
+        </button>
+      </div>
+    </div>
+    <!-- close the second containt of my site -->
+    <!-- this is the third content of my site -->
+    <div
+      class="First_project mx-20 md:flex md:items-center m-10"
+      data-aos-duration="700"
+      data-aos="slide-left"
+      data-aos-once="true"
+    >
+      <img
+        src="./Images/project3.png"
+        alt="img"
+        class="images project_img md:w-1/2 w-full shadow-2xl ..."
+        data-aos-delay="750"
+        data-aos-duration="800"
+        data-aos="fade-right"
+        data-aos-once="true"
+      />
+      <div class="text1 mx-5 mt-4">
+        <h2 class="text-xl font-bold">Crud Application</h2>
+        <p class="text-left my-3">
+          Crud Application with the help of basic Html, Css and Java Script
+        </p>
+        <button
+          type="button"
+          class="btn btn-secondary bg-slate-200 text-black hover:text-black"
+        >
+          <a href="https://harshsaxenajii.github.io/CRUD/" target=" ">Link</a>
+        </button>
+      </div>
+    </div>
+    <!-- close the third containt of my site -->
+    <!-- this is the fourth content of my site -->
+    <div
+      class="First_project mx-20 items-center md:flex md:flex-row-reverse md:justify-between my-10"
+      data-aos-duration="700"
+      data-aos="slide-right"
+      data-aos-once="true"
+    >
+      <img
+        src="./Images/project4.png"
+        alt="img"
+        class="images project_img md:w-1/2 w-full shadow-2xl ..."
+        data-aos-delay="750"
+        data-aos-duration="800"
+        data-aos="fade-left"
+        data-aos-once="true"
+      />
+      <div class="text1 mx-5 mt-4">
+        <h2 class="text-xl font-bold">Harsh App</h2>
+        <p class="text-left my-3">
+          React app with Login, Signup and Home page with the manual loging,
+          also with the google authentication and protected routes
+        </p>
+        <button
+          type="button"
+          class="btn btn-secondary bg-slate-200 text-black hover:text-black"
+        >
+          <a
+            href="https://login-with-auth-hyuyyiowc-harshjiiprogrammer.vercel.app/"
+            target=" "
+            >Link</a
+          >
+        </button>
+      </div>
+    </div>
+    <!-- close the forth project containt of my site -->
+    <!-- this is the fifth content of my site -->
+    <div
+      class="First_project mx-20 md:flex md:items-center m-10"
+      data-aos-duration="700"
+      data-aos="slide-left"
+      data-aos-once="true"
+    >
+      <img
+        src="./Images/project5.png"
+        alt="img"
+        class="images project_img md:w-1/2 w-full shadow-2xl ..."
+        data-aos-delay="750"
+        data-aos-duration="800"
+        data-aos="fade-right"
+        data-aos-once="true"
+      />
+      <div class="text1 mx-5 mt-4">
+        <h2 class="text-xl font-bold">Login/Signup page</h2>
+        <p class="text-left my-3">
+          Login/Signup page with out authentication, only for understand the
+          working of login and signup with the database
+        </p>
+        <button
+          type="button"
+          class="btn btn-secondary bg-slate-200 text-black hover:text-black"
+        >
+          <a href="/" target=" ">Link</a>
+        </button>
+      </div>
+    </div>
+    <!-- close the fifth project containt of my site -->
+
+    <!-- this is the sixth content of my site -->
+    <div
+      class="First_project mx-20 items-center md:flex md:flex-row-reverse md:justify-between my-10"
+      data-aos-duration="700"
+      data-aos="slide-right"
+      data-aos-once="true"
+    >
+      <img
+        src="./Images/project6.png"
+        alt="img"
+        class="images project_img md:w-1/2 w-full shadow-2xl ..."
+        data-aos-delay="750"
+        data-aos-duration="800"
+        data-aos="fade-left"
+        data-aos-once="true"
+      />
+      <div class="text1 mx-5 mt-4">
+        <h2 class="text-xl font-bold">News App</h2>
+        <p class="text-left my-3">
+          This is the combination of Bootstrap and news API in react
+        </p>
+        <button
+          type="button"
+          class="btn btn-secondary bg-slate-200 text-black hover:text-black"
+        >
+          <a href="/">Link</a>
+        </button>
+      </div>
+    </div>
+    <!-- close the sixth project containt of my site -->
+
+    <!-- this is the seventh content of my site -->
+    <div
+      class="First_project mx-20 md:flex md:items-center m-10"
+      data-aos-duration="700"
+      data-aos="slide-left"
+      data-aos-once="true"
+    >
+      <img
+        src="./Images/project7.png"
+        alt="img"
+        class="images project_img md:w-1/2 w-full shadow-2xl ..."
+        data-aos-delay="750"
+        data-aos-duration="800"
+        data-aos="fade-right"
+        data-aos-once="true"
+      />
+      <div class="text1 mx-5 mt-4">
+        <h2 class="text-xl font-bold">School Site</h2>
+        <p class="text-left my-3">
+          Compleat site in ejs, nice Cards and with the perfect AOS combination
+        </p>
+        <button
+          type="button"
+          class="btn btn-secondary bg-slate-200 text-black hover:text-black"
+        >
+          <a href="/">Link</a>
+        </button>
+      </div>
+    </div>
+    <!-- close the seventh project containt of my site -->
+
+    <!-- this is the 8th content of my site -->
+    <div
+      class="First_project mx-20 items-center md:flex md:flex-row-reverse md:justify-between my-10"
+      data-aos-duration="700"
+      data-aos="slide-right"
+      data-aos-once="true"
+    >
+      <img
+        src="./Images/project8.png"
+        alt="img"
+        class="images project_img md:w-1/2 w-full shadow-2xl ..."
+        data-aos-delay="750"
+        data-aos-duration="800"
+        data-aos="fade-left"
+        data-aos-once="true"
+      />
+      <div class="text1 mx-5 mt-4">
+        <h2 class="text-xl font-bold">Kanha Jii Appliances</h2>
+        <p class="text-left my-3">
+          Compleat site in react, frontend is compleact but not too much work in
+          backend
+        </p>
+        <button
+          type="button"
+          class="btn btn-secondary bg-slate-200 text-black hover:text-black"
+        >
+          <a href="https://kanhaji.vercel.app/" target=" ">Link</a>
+        </button>
+      </div>
+    </div>
+    <!-- close the 8th project containt of my site -->
+
+    <!-- Footer -->
+    <footer
+      class="page-footer font-small cyan darken-3 bg-slate-100 mt-6"
+      data-aos="flip-down"
+      data-aos-duration="700"
+      data-aos-once="true"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 pt-3">
+            <div class="mb-5 flex-center flex justify-center">
+              <h1 class="text-red-700 font-bold">Follow me -</h1>
+              <a href="https://www.facebook.com/harshsaxenajii/" target=" "
+                ><img class="w-6 mx-1" src="./Images/facebook.png" alt="img"
+              /></a>
+              <a href="https://www.instagram.com/harsh.saxenajii/" target=" "
+                ><img class="w-6 mx-1" src="./Images/instagram.png" alt="img"
+              /></a>
+              <a href="/" target=" "
+                ><img class="w-6 mx-1" src="./Images/telegram.png" alt="img"
+              /></a>
+            </div>
+            <div class="flex justify-center text-center flex-col">
+              <div class="text-xl mb-3">
+                Thank You! For visit my site i hope you like this
+              </div>
+              <p class="para_low lg:mx-72">
+                Always down to collaborate when I have the time. I'm hoping to
+                further my career by disrupting the social product space. Let's
+                get in touch ✌️.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright text-center py-3 text-gray-400">
+        Copyright © 2022 harsh saxena
+      </div>
+    </footer>
+    <!-- Footer -->
+  </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
